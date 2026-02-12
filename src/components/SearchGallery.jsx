@@ -3,23 +3,23 @@ import { Search } from 'lucide-react';
 
 const SearchGallery = () => {
   return (
-    <section id="spaces" className="w-full px-6 md:px-12 py-20 bg-white">
+    <section id="spaces" className="w-full px-4 sm:px-6 md:px-12 py-12 sm:py-20 bg-white overflow-hidden">
       
       {/* 1. Header Text Section */}
-      <div className="text-center mb-16">
-        <h2 className="text-4xl md:text-6xl font-light text-gray-900 leading-tight">
+      <div className="text-center mb-10 sm:mb-16">
+        <h2 className="text-3xl sm:text-4xl md:text-6xl font-light text-gray-900 leading-tight">
             Flexible Workspaces to Fit <br />
             <span className="font-medium">Your Needs. Book Now</span>
         </h2>
       </div>
 
       {/* 2. Search Bar */}
-      <div className="bg-white rounded-full p-3 pl-8 mb-20 flex flex-col md:flex-row items-center justify-between gap-4 max-w-5xl mx-auto shadow-xl shadow-gray-100/50 border border-gray-50">
-        <div className="flex-1 w-full pr-4 border-b md:border-b-0 md:border-r border-gray-100 py-2 md:py-0">
+      <div className="bg-white rounded-2xl sm:rounded-full p-4 sm:p-3 sm:pl-8 mb-12 sm:mb-20 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4 max-w-5xl mx-auto shadow-xl shadow-gray-100/50 border border-gray-50">
+        <div className="flex-1 w-full pr-0 sm:pr-4 border-b sm:border-b-0 sm:border-r border-gray-100 py-2 sm:py-0">
           <label className="block text-xs font-bold text-gray-900 mb-1 tracking-wide">Find your spot</label>
           <input type="text" placeholder="Search location..." className="w-full bg-transparent text-sm outline-none text-gray-700 placeholder-gray-400 font-medium"/>
         </div>
-        <div className="flex-1 w-full px-4 border-b md:border-b-0 md:border-r border-gray-100 py-2 md:py-0">
+        <div className="flex-1 w-full px-0 sm:px-4 border-b sm:border-b-0 sm:border-r border-gray-100 py-2 sm:py-0">
           <label className="block text-xs font-bold text-gray-900 mb-1 tracking-wide">Type</label>
           <select className="w-full bg-transparent text-sm outline-none text-gray-700 font-medium cursor-pointer appearance-none pr-6">
             <option>Private, Hot Desk, etc...</option>
@@ -27,7 +27,7 @@ const SearchGallery = () => {
             <option>Private Office</option>
           </select>
         </div>
-        <div className="flex-1 w-full px-4 py-2 md:py-0">
+        <div className="flex-1 w-full px-0 sm:px-4 py-2 sm:py-0">
           <label className="block text-xs font-bold text-gray-900 mb-1 tracking-wide">Price</label>
           <select className="w-full bg-transparent text-sm outline-none text-gray-700 font-medium cursor-pointer appearance-none pr-6">
             <option>Select range budget</option>
@@ -35,15 +35,15 @@ const SearchGallery = () => {
             <option>$50 - $100</option>
           </select>
         </div>
-        <button className="bg-brand-orange text-white px-8 py-4 rounded-full font-bold hover:bg-orange-600 transition-colors flex items-center gap-2 shadow-lg shadow-orange-500/20">
+        <button className="bg-brand-orange text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-bold hover:bg-orange-600 transition-colors flex items-center justify-center gap-2 shadow-lg shadow-orange-500/20 w-full sm:w-auto">
             <Search className="w-5 h-5" />
             <span>Discover</span>
         </button>
       </div>
 
       {/* 3. Hivebase Split Layout */}
-      <div className="flex flex-col md:flex-row w-full h-auto md:h-[500px] rounded-[1rem] overflow-hidden shadow-2xl shadow-gray-100 border border-gray-100 mb-20">
-        <div className="w-full md:w-[35%] bg-white p-8 flex flex-col">
+      <div className="flex flex-col md:flex-row w-full h-auto md:h-[500px] rounded-[1rem] overflow-hidden shadow-2xl shadow-gray-100 border border-gray-100 mb-12 sm:mb-20">
+        <div className="w-full md:w-[35%] bg-white p-6 sm:p-8 flex flex-col">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">Hivebase</h3>
             <div className="relative w-full h-90 rounded-1rem overflow-hidden mb-auto">
                  <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1600" className="w-full h-full object-cover" alt="Small Thumbnail"/>
@@ -68,10 +68,10 @@ const SearchGallery = () => {
       </div>
 
       {/* 4. Staggered Gallery Grid (Waterfall Layout) */}
-      <div className="flex flex-col md:flex-row gap-8 items-start w-full">
+      <div className="flex flex-col md:flex-row gap-6 sm:gap-8 items-start w-full">
          
          {/* GROUP 1: LEFT (Positioned Highest) */}
-         <div className="flex gap-6 w-full md:w-[30%]">
+         <div className="flex gap-4 sm:gap-6 w-full md:w-[30%]">
              {/* Item 1: Corner */}
              <div className="flex-1 flex flex-col gap-3">
                  <div className="relative rounded-[1.5rem] overflow-hidden aspect-square group">
@@ -100,7 +100,7 @@ const SearchGallery = () => {
 
          {/* GROUP 2: MIDDLE (Kopilot Space - Large Card) */}
          {/* mt-12 pushes it down slightly relative to the left group */}
-         <div className="w-full md:w-[35%] bg-white rounded-[2rem] border border-gray-100 p-6 shadow-2xl shadow-gray-100 mt-12">
+         <div className="w-full md:w-[35%] bg-white rounded-[2rem] border border-gray-100 p-4 sm:p-6 shadow-2xl shadow-gray-100 mt-0 md:mt-12">
             <h3 className="text-xl font-bold mb-6 text-gray-900">Kopilot Space</h3>
             
             <div className="relative w-full h-64 rounded-2xl overflow-hidden mb-6">
@@ -117,7 +117,7 @@ const SearchGallery = () => {
 
          {/* GROUP 3: RIGHT (Positioned Lowest) */}
          {/* mt-24 pushes it down further, creating the staggered step effect */}
-         <div className="flex gap-6 w-full md:w-[35%] mt-24">
+         <div className="flex gap-4 sm:gap-6 w-full md:w-[35%] mt-0 md:mt-24">
              {/* Item 1: White Curve */}
              <div className="flex-1 flex flex-col gap-3">
                  <div className="flex justify-between items-end px-1 mb-1">

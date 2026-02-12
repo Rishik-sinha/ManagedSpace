@@ -3,10 +3,10 @@ import { MoveRight } from 'lucide-react';
 
 const Steps = () => {
   return (
-    <section id="steps" className="w-full px-8 py-16 bg-white">
+    <section id="steps" className="w-full px-4 sm:px-8 py-10 sm:py-16 bg-white">
       
       {/* 1. Section Header */}
-      <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+      <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 sm:mb-16 gap-6 sm:gap-8">
         <div>
            <div className="flex items-center gap-2 mb-4">
               <span className="bg-gray-100 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider">How it works</span>
@@ -14,7 +14,7 @@ const Steps = () => {
                  <MoveRight className="w-3 h-3" />
               </div>
            </div>
-           <h2 className="text-4xl md:text-5xl font-medium tracking-tight leading-tight max-w-md">
+           <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight leading-tight max-w-md">
              Working Has Never <br /> Been This Easy
            </h2>
         </div>
@@ -30,20 +30,20 @@ const Steps = () => {
       </div>
 
       {/* 2. The Three Steps */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8">
         
         {/* Step 01 */}
-        <div className="bg-gray-50 rounded-2xl p-6 relative h-[320px] group hover:bg-white hover:shadow-xl transition-all duration-300 border border-transparent hover:border-gray-100">
+        <div className="bg-gray-50 rounded-2xl p-5 sm:p-6 relative h-[280px] sm:h-[320px] group hover:bg-white hover:shadow-xl transition-all duration-300 border border-transparent hover:border-gray-100">
            <div className="flex justify-between items-start mb-4">
               <span className="text-xs font-semibold text-gray-400">Step</span>
               <span className="text-xs font-semibold text-gray-400">01</span>
            </div>
-           <h3 className="text-xl font-medium mb-2">Find Your Spot</h3>
+           <h3 className="text-lg sm:text-xl font-medium mb-2">Find Your Spot</h3>
            <p className="text-xs text-gray-500 mb-8 max-w-[200px]">
               Browse spaces, location, time and have Desk, Office, Meeting...
            </p>
            {/* Image placed absolutely at bottom right */}
-           <div className="absolute bottom-6 right-6 w-32 h-24 shadow-lg rounded-lg overflow-hidden transform group-hover:scale-105 transition-transform">
+           <div className="absolute bottom-5 right-5 sm:bottom-6 sm:right-6 w-24 h-20 sm:w-32 sm:h-24 shadow-lg rounded-lg overflow-hidden transform group-hover:scale-105 transition-transform">
               <img 
                 src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=300" 
                 alt="Office desk" 
@@ -53,16 +53,16 @@ const Steps = () => {
         </div>
 
         {/* Step 02 */}
-        <div className="bg-gray-50 rounded-2xl p-6 relative h-[320px] group hover:bg-white hover:shadow-xl transition-all duration-300 border border-transparent hover:border-gray-100">
+        <div className="bg-gray-50 rounded-2xl p-5 sm:p-6 relative h-[280px] sm:h-[320px] group hover:bg-white hover:shadow-xl transition-all duration-300 border border-transparent hover:border-gray-100">
            <div className="flex justify-between items-start mb-4">
               <span className="text-xs font-semibold text-gray-400">Step</span>
               <span className="text-xs font-semibold text-gray-400">02</span>
            </div>
-           <h3 className="text-xl font-medium mb-2">Book Instantly Online</h3>
+           <h3 className="text-lg sm:text-xl font-medium mb-2">Book Instantly Online</h3>
            <p className="text-xs text-gray-500 mb-8 max-w-[200px]">
               12 rooms all rented, select a plan, a workspace you need easily.
            </p>
-           <div className="absolute bottom-6 right-6 w-48 h-32 shadow-lg rounded-lg overflow-hidden transform group-hover:scale-105 transition-transform">
+           <div className="absolute bottom-5 right-5 sm:bottom-6 sm:right-6 w-36 h-24 sm:w-48 sm:h-32 shadow-lg rounded-lg overflow-hidden transform group-hover:scale-105 transition-transform">
               <img 
                 src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=400" 
                 alt="Typing on laptop" 
@@ -72,7 +72,7 @@ const Steps = () => {
         </div>
 
         {/* Step 03 */}
-        <div className="bg-[#1A2B45] text-white rounded-2xl p-6 relative h-[320px] overflow-hidden">
+        <div className="bg-[#1A2B45] text-white rounded-2xl p-5 sm:p-6 relative h-[280px] sm:h-[320px] overflow-hidden sm:col-span-2 md:col-span-1">
            <div className="flex justify-between items-start mb-4">
               <span className="text-xs font-semibold text-gray-400">Step</span>
               <span className="text-xs font-semibold text-gray-400">03</span>

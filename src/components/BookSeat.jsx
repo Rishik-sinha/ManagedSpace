@@ -63,16 +63,16 @@ const BookSeat = () => {
             <h2 className="text-2xl font-light text-gray-600 mb-2">Tailored Workspaces for</h2>
             <h2 className="text-2xl font-light text-gray-900">You. Reserve Now!</h2>
           </div>
-          <h2 className="text-4xl sm:text-6xl lg:text-8xl font-normal text-gray-900 tracking-tighter md:text-right leading-none">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-normal text-gray-900 tracking-tighter md:text-right leading-none">
             Book a<br />Seat Now
           </h2>
         </div>
 
         {/* 2. MAIN GRID LAYOUT */}
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 items-center">
           
           {/* COLUMN 1: Space Types List */}
-          <div className="lg:col-span-1 space-y-8">
+          <div className="md:col-span-1 lg:col-span-1 space-y-8">
             <div>
               <p className="text-xs text-gray-400 mb-6">Space Type</p>
               
@@ -99,7 +99,7 @@ const BookSeat = () => {
           </div>
 
           {/* COLUMN 2: Image Display (STRAIGHT / NO TILT) */}
-          <div className="lg:col-span-1 flex justify-center">
+          <div className="md:col-span-1 lg:col-span-1 flex justify-center">
             {/* Removed 'transform rotate-3' to keep it straight */}
             <div className="p-2 bg-white rounded-2xl shadow-xl transition-all duration-500">
               <img 
@@ -111,10 +111,10 @@ const BookSeat = () => {
           </div>
 
           {/* COLUMN 3 & 4: Details List */}
-          <div className="lg:col-span-2 pl-0 lg:pl-12">
+          <div className="md:col-span-2 lg:col-span-2 pl-0 lg:pl-12">
             
             {/* Table Headers */}
-            <div className="grid grid-cols-3 gap-8 mb-6 border-b border-gray-100 pb-2">
+            <div className="grid grid-cols-3 gap-4 sm:gap-8 mb-6 border-b border-gray-100 pb-2">
               <p className="text-xs text-gray-400">Best For</p>
               <p className="text-xs text-gray-400">Booking Options</p>
               <p className="text-xs text-gray-400"></p>
@@ -128,7 +128,7 @@ const BookSeat = () => {
                 return (
                   <div 
                     key={space.id} 
-                    className={`grid grid-cols-3 gap-8 items-center py-2 ${
+                    className={`grid grid-cols-3 gap-4 sm:gap-8 items-center py-2 ${
                       isActive ? 'bg-gray-50 rounded px-3 -mx-3 py-3' : ''
                     }`}
                   >
